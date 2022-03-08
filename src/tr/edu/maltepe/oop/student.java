@@ -1,3 +1,4 @@
+package tr.edu.maltepe.oop;
 public class student {
     private String name;
     private int age;
