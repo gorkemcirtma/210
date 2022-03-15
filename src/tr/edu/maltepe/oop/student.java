@@ -1,15 +1,20 @@
 package tr.edu.maltepe.oop;
-public class student {
-    private String name;
-    private int age;
+public class student extends person {
+    private int id;
+    public student(String name,int age,int id){
 
-
-    public student(String name,int age){
-        this.name=name;
-        this.age=age;
-
+        super(name,age);
+        this.id=id;
     }
+
     public String detayGoster(){
-        return this.name+"   "+this.age;
+        return this.name+"   "+this.age+"    "+this.id;
+    }
+    public void setId(int id){
+        id=this.id;
+    }
+    public int getId(){
+        return this.id;
+
     }
 }

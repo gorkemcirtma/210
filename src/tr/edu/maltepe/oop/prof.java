@@ -1,14 +1,20 @@
 package tr.edu.maltepe.oop;
-public class prof {
-    private String name;
-    private int age;
-    private String soyad;
-    public prof(String name,int age){
-        this.name=name;
-        this.age=age;
+public class prof extends person{
+    private int id;
+    public prof(String name,int age,int id){
 
+        super(name,age);
+        this.id=id;
     }
+
     public String detayGoster(){
-        return this.name+"  " +this.age;
+        return this.name+"   "+this.age+"    "+this.id;
+    }
+    public void setId(int id){
+        id=this.id;
+    }
+    public int getId(){
+        return this.id;
+
     }
 }
